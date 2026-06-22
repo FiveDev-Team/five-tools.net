@@ -447,10 +447,9 @@
 
 <script>
   // ── CONFIG ──────────────────────────────────────────────
-  const JSON_URL = 'https://raw.githubusercontent.com/FiveDev-Team/json-pack/main/packs.json';
-  // Si tu as un JSON séparé pour les VIP, mets son URL ici :
-  const JSON_VIP_URL = null; // ex: 'https://raw.githubusercontent.com/FiveDev-Team/json-pack/main/packs-vip.json'
-  // Sinon le script filtre par un champ "vip": true dans le même JSON
+  const JSON_URL = './packs.json';
+  const JSON_VIP_URL = null;
+  const DISCORD_URL = 'https://discord.com'; // ← remplace par ton vrai lien Discord
   // ────────────────────────────────────────────────────────
 
   let allPacks = { free: [], vip: [] };
@@ -494,8 +493,8 @@
       : `<span class="pack-badge badge-free">Gratuit</span>`;
 
     const dlBtn = isVip
-      ? `<span class="pack-dl-btn vip">🔒 VIP uniquement</span>`
-      : `<a class="pack-dl-btn" href="${pack.download_url || '#'}" target="_blank" rel="noopener">↓ Télécharger</a>`;
+      ? `<a class="pack-dl-btn vip" href="${DISCORD_URL}" target="_blank" rel="noopener">✦ Obtenir VIP</a>`
+      : `<a class="pack-dl-btn" href="${DISCORD_URL}" target="_blank" rel="noopener">→ Obtenir sur Discord</a>`;
 
     card.innerHTML = `
       ${thumb}
