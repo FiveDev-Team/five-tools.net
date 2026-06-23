@@ -298,24 +298,6 @@
       "size_mb": 95,
       "downloads": 0
     },
-    {
-      "id": "testt",
-      "name": "testtt",
-      "author": "testttttttt",
-      "version": "1",
-      "vip": false,
-      "categorie": "graphique",
-      "filtres": [],
-      "description": "cacaca",
-      "tags": [
-        "FIVEM",
-        "MODS",
-        "GTA"
-      ],
-      "preview_url": "https://github.com/FiveDev-Team/json-pack/blob/main/packs-vip.json",
-      "youtube_url": "https://github.com/FiveDev-Team/json-pack/blob/main/packs-vip.json",
-      "size_mb": 0,
-      "downloads": 0
     }
   ]
 }
